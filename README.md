@@ -26,9 +26,16 @@ pip install -r requirements.txt
 Create templates directory
 mkdir templates 5. Configuration Edit app.py and update the following variables:
 
+## Project Structure
+
 CLIENT_ID = 'your-google-client-id' # From Google Cloud Console CLIENT_SECRET = 'your-google-client-secret' # From Google Cloud Console GEMINI_API_KEY = 'your-gemini-api-key' # From Google AI Studio app.secret_key = 'your-secret-key-here' # Change this to a random string 6. File Structure Ensure your project has this structure:
 
-rag-chatbot/ ├── app.py # Main Flask application ├── requirements.txt # Python dependencies ├── README.md # This file └── templates/ └── index.html # Frontend interface 7. Running the Application
+rag-chatbot/
+├── app.py # Main Flask application
+├── requirements.txt # Python dependencies
+├── README.md # This file 
+└── templates/ 
+└── index.html # Frontend interface 7. Running the Application
 
 Make sure virtual environment is activated
 python app.py The application will start on http://localhost:5000
@@ -60,4 +67,5 @@ Authentication status Document processing progress API call results Error messag
 Use environment variables for sensitive data Set up proper SSL certificates Configure production WSGI server (Gunicorn included) Update redirect URIs for production domain Implement proper session storage (Redis/Database) Add rate limiting and monitoring License This project is open source and available under the MIT License.
 
 Contributing Feel free to submit issues, fork the repository, and create pull requests for any improvements.
+
 
