@@ -1,3 +1,4 @@
+## About :
 RAG-Powered Google Docs Chatbot A complete RAG (Retrieval-Augmented Generation) chatbot that integrates with Google Docs using OAuth 2.0 authentication. Users can select documents from their Google Drive, add them to a knowledge base, and chat with their documents using AI.
 
 Features 🔐 Google OAuth 2.0 Authentication: Secure login with Google accounts 📄 Google Docs Integration: Fetch and display user's Google Docs 🧠 Knowledge Base Management: Add selected documents to a searchable knowledge base 🤖 RAG Pipeline: Retrieval-Augmented Generation using vector embeddings 💬 Interactive Chat Interface: Clean, responsive web interface 🔍 Source Attribution: Shows which documents were used for answers ⚡ Fallback Mechanism: Uses general knowledge when documents don't contain the answer Architecture Backend: Python Flask with Google APIs Vector Database: FAISS for similarity search Embeddings: Sentence Transformers (all-MiniLM-L6-v2) LLM: Google Gemini API (with Hugging Face alternative) Frontend: Vanilla JavaScript with modern responsive design Setup Instructions
@@ -59,3 +60,4 @@ Authentication status Document processing progress API call results Error messag
 Use environment variables for sensitive data Set up proper SSL certificates Configure production WSGI server (Gunicorn included) Update redirect URIs for production domain Implement proper session storage (Redis/Database) Add rate limiting and monitoring License This project is open source and available under the MIT License.
 
 Contributing Feel free to submit issues, fork the repository, and create pull requests for any improvements.
+
